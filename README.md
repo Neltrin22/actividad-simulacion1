@@ -25,7 +25,9 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+    Como no hay IO, ningún proceso se suspende o se reprograma. Así que el sistema ejecuta el primer proceso (Process 0) hasta que termina, luego pasa al segundo proceso (Process 1) y lo ejecuta hasta el final, lo cual produce un porcentaje de utilización de la CPU del 100%.
+      ![Imagen de WhatsApp 2025-04-11 a las 20 04 33_558680f4](https://github.com/user-attachments/assets/8dcbbae8-41a5-46c7-a373-15a8effaddfb)
+
    </details>
    <br>
 
