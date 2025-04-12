@@ -2,8 +2,9 @@
 
 |Integrante|correo|usuario github|
 |---|---|---|
-|Nombre completo integrante 1|correo integrante 1|gihub user integrante 1|
-|Nombre completo integrante 2|correo integrante 2|gihub user integrante 2|
+|Clara Isabel Villadiego Martinez|clara.villadiego@udea.edu.co|ClaraVilladiego|
+|William Alexander Torres Zambrano|correo integrante 2|gihub user integrante 2|
+|Nelson Alcides Puerta García|alcides.puerta@udea.edu.co|Neltrin22|
 
 ## Instrucciones
 
