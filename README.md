@@ -3,7 +3,7 @@
 |Integrante|correo|usuario github|
 |---|---|---|
 |Clara Isabel Villadiego Martinez|clara.villadiego@udea.edu.co|ClaraVilladiego|
-|William Alexander Torres Zambrano|correo integrante 2|gihub user integrante 2|
+|William Alexander Torres Zambrano|walexander.torres@udea.edu.co|watorres|
 |Nelson Alcides Puerta García|alcides.puerta@udea.edu.co|Neltrin22|
 
 ## Instrucciones
@@ -35,7 +35,10 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+   Como hay una una IO el proceso se bloquea y le da paso a los demas procesos, entonce espera hasta que culmine la operacion de IO que puede durar un promedio de 6 ciclos 
+   mas otros 4 del otro proceso podría tomarse al rededor de 14 ciclos.
+      <img width="432" alt="{8AF90B67-E8E4-4684-AB65-8BA520329E32}" src="https://github.com/user-attachments/assets/66ed5698-a299-4263-951c-5720e00488c5" />
+
    </details>
    <br>
 
@@ -43,7 +46,9 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+   Se reduciría el tiempo de ejecución, porque mientras se procesa la IO se ejecuta el otro proceso.
+      <img width="418" alt="{48321A28-58A8-413F-BBE8-A6499D120404}" src="https://github.com/user-attachments/assets/937c2899-374e-43a1-8f96-303047b75245" />
+
    </details>
    <br>
 
@@ -51,7 +56,9 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+   Con esa instrucción el sistema no cambiara a los demas procesos hasta que termine el proceso que tiene la IO y esto sucede despues de que retorne de la IO, en ese tiempo     no habrá utilización de la CPU.
+      <img width="489" alt="{A7E653E7-11FB-49C7-B558-C4AA8CBE487C}" src="https://github.com/user-attachments/assets/a8938a5a-fb73-4e7a-8d05-4f8543bdf22c" />
+
    </details>
    <br>
 
@@ -59,7 +66,9 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+   Em este caso si se permite cambiar a otros procesos cuando se realiza la solicitud de IO, por lo tanto se mejora la eficiencia y utilización de la CPU.
+      <img width="491" alt="{CB1EE1D9-2F59-4D55-A175-6DFD592A3E0C}" src="https://github.com/user-attachments/assets/dc22a2c1-0bf8-4aac-a32a-65ae49c5f84c" />
+
    </details>
    <br>
 
@@ -67,7 +76,9 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+   Con estas instrucciones el sistema otorga cierta prioridades y deja esperando al proceso que hizo la IO sin robarle el control al proceso en ejecución, esto puede hacer      que el sistema sea mas equilibrado planificando tambien los retornos de las IO.
+      <img width="502" alt="{8AC4A59D-9D3A-476C-B059-740810512C62}" src="https://github.com/user-attachments/assets/9e13ab0d-27a3-45d9-9dd3-6e334f01ad60" />
+
    </details>
    <br>
 
@@ -75,7 +86,11 @@ This program, [`process-run.py`](process-run.py), allows you to see how process 
    
    <details>
    <summary>Answer</summary>
-   Coloque aqui su respuerta
+   Como en este caso el retorno de una IO interrumpe el proceso en ejecución, se puede incrementar considerablemente el tiempo de ejecución de las procesos que no están 
+   ejecutando peticiones IO, la ventaja es que se aumenta el tiempo de utilización de la CPU.
+      <img width="511" alt="{D9B492CE-B7A3-4694-AF35-63B8EC41EE90}" src="https://github.com/user-attachments/assets/b0305a18-6e89-463f-8975-4b0f26c9f452" />
+
+      
    </details>
    <br>
 
